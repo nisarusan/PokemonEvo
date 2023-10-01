@@ -7,49 +7,17 @@ public class Main {
         PokemonWater Blastoise = new PokemonWater("Blastoise", 5, 150, 65, 150, "Grass", "Blastois", "rainDance");
         System.out.println(Blastoise.rainDance());
         System.out.println(Charizard.getName() + "  voert een aanval uit op " +  Blastoise.getName() + " en doet een " + Charizard.attack);
+        System.out.println("Welke Pokemon wil je gebruiken");
+        Scanner input = new Scanner(System.in);
+        String Pokemon = input.nextLine();
+        System.out.println("Welke level heeft pokemon");
+        int PokemonLevel = input.nextInt();
+        if(PokemonLevel > 5) {
+           String attack = "rainDance";
+            PokemonWater Bubblesaur = new PokemonWater(Pokemon, PokemonLevel, 150, 65, 150, "Grass", "Blastois", attack);
+        }
+        System.out.println(Pokemon + " " +  PokemonLevel);
+
     }
-
-
-
-//    Weet je niet wat voor variabelen je jouw klassen kunt meegeven? Denk eens aan:
-//
-//    name
-//            level
-//    hp (health points)
-//    xp (experience points)
-//    height
-//            weight
-//    food
-//            sound
-//    defence
-//            attack
-//    special
-//            accuracy
-//    Pokèmon kunnen ook ontzettend veel verschillende acties uitvoeren. Zo kun je denken aan de volgende methodes:
-//
-//    eats()
-//    speaks()
-//    thunderPunch()
-//    cometPunch()
-//    surf()
-//    leafStorm()
-//    inferno()
-//    electroBall()
-//    pyroBall*()
-//    solarBeam()
-//    hydroPump()
-//    thunder()
-//    hydroCanon()
-//    fireLash()
-//    leechSeed()
-//    voltTackle()
-//    rainDance()
-//    leaveBlade()
-//    flameThrower()
-//    pound()
-//    scratch()
-//    gust()
-//    hornAttack()
-//    psyBeam()
 
 }
