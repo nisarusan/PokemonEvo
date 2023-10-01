@@ -1,17 +1,19 @@
-public abstract class PokeMonGeneric {
+public class PokeMonGeneric {
 
     //instance fields generic that shares with all pokemon Dna
-    String name;
+    private String name;
     int level;
     int hp;
     int xp;
-    int weight;
+    private int weight;
     String food;
     String sound;
+    String attack;
 
 
     // generic Pokemon Constructor
-    public PokeMonGeneric(String name, int level, int hp, int xp, int weight, String food, String sound) {
+    public PokeMonGeneric(String name, int level, int hp, int xp, int weight, String food, String sound, String attack) {
+
         this.name = name;
         this.level = level;
         this.hp = hp;
@@ -19,6 +21,7 @@ public abstract class PokeMonGeneric {
         this.weight = weight;
         this.food = food;
         this.sound = sound;
+        this.attack = attack;
     }
 
 
